@@ -161,7 +161,7 @@ const ContactContact27: React.FC<ContactContact27Props> = (props) => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start p-2 w-full">
-              <div className="flex flex-row gap-[31px] items-center justify-center w-full">
+              <div className="flex flex-row md:gap-2.5 gap-[31px] items-center justify-center w-full">
                 <Button
                   className="cursor-pointer flex items-center justify-center min-w-[126px]"
                   leftIcon={
@@ -264,7 +264,7 @@ const ContactContact27: React.FC<ContactContact27Props> = (props) => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start p-2 w-full">
-              <div className="flex flex-row gap-[31px] items-center justify-center w-full">
+              <div className="flex flex-row md:gap-2.5 gap-[31px] items-center justify-center w-full">
                 <Button
                   className="cursor-pointer flex items-center justify-center min-w-[126px]"
                   leftIcon={
@@ -367,7 +367,7 @@ const ContactContact27: React.FC<ContactContact27Props> = (props) => {
               </div>
             </div>
             <div className="flex flex-col items-start justify-start p-2 w-full">
-              <div className="flex flex-row gap-[31px] items-center justify-center w-full">
+              <div className="flex flex-row md:gap-2.5 gap-[31px] items-center justify-center w-full">
                 <Button
                   className="cursor-pointer flex items-center justify-center min-w-[126px]"
                   leftIcon={

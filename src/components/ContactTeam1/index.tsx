@@ -101,7 +101,7 @@ const ContactTeam1: React.FC<ContactTeam1Props> = (props) => {
           >
             <div className="flex flex-1 flex-col items-start justify-start my-0 w-full">
               <div className="flex flex-col gap-6 items-center justify-start w-full">
-                <div className="gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between w-full">
+                <div className="gap-6 grid md:grid-cols-1 grid-cols-3 items-center justify-between w-full">
                   <div className="flex flex-1 flex-col gap-6 items-center justify-start w-full">
                     <Img
                       className="h-20 md:h-auto object-cover w-20"
@@ -291,7 +291,7 @@ const ContactTeam1: React.FC<ContactTeam1Props> = (props) => {
             </div>
             <div className="flex flex-1 flex-col items-start justify-start my-0 w-full">
               <div className="flex flex-col gap-6 items-center justify-start w-full">
-                <div className="gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-between w-full">
+                <div className="gap-6 grid md:grid-cols-1 grid-cols-3 items-center justify-between w-full">
                   <div className="flex flex-1 flex-col gap-6 items-center justify-start w-full">
                     <Img
                       className="h-20 md:h-auto object-cover w-20"
