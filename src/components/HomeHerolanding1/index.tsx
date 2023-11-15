@@ -104,7 +104,7 @@ const HomeHerolanding1: React.FC<HomeHerolanding1Props> = (props) => {
             </div>
           </div>
           <Img
-            className="flex-1 h-[500px] sm:h-[] md:h-auto max-h-[500px] sm:max-h-[] sm:min-w-full object-cover sm:w-[] md:w-[]"
+            className="flex-1 md:h-auto max-h-[500px] sm:min-w-0 object-cover sm:w-[] md:w-[]"
             src="images/img_heroanimation_500x558.png"
             alt="heroanimation"
           />
