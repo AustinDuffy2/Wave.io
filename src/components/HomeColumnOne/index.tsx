@@ -30,7 +30,7 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
       <div className={props.className}>
         <div className="flex flex-col gap-10 items-center justify-start w-full">
           <List
-            className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center w-full"
+            className="sm:flex-col flex-row gap-6 grid md:grid-cols-1 grid-cols-3 justify-center w-full"
             orientation="horizontal"
           >
             <div className="flex flex-1 flex-col gap-5 items-center justify-start sm:ml-[0] rounded-[20px] w-full">

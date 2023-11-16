@@ -85,7 +85,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
               }
               size="xs"
             >
-              <div className="font-roboto text-gray-400 text-lg text-right">
+              <div className="font-roboto justify-end text-gray-400 text-lg text-right">
                 {props?.exploreAll}
               </div>
             </Button>
