@@ -9,8 +9,8 @@ type PropertiesLayout237Props = Omit<
   | "description"
   | "locationheading"
   | "locationdescription"
-  | "propertyheading"
-  | "propertydescription"
+  | "typeheading"
+  | "typedescription"
   | "sizeheading"
   | "sizedescription"
   | "searchbutton"
@@ -22,8 +22,8 @@ type PropertiesLayout237Props = Omit<
     description: JSX.Element | string;
     locationheading: string;
     locationdescription: string;
-    propertyheading: string;
-    propertydescription: string;
+    typeheading: string;
+    typedescription: string;
     sizeheading: string;
     sizedescription: JSX.Element | string;
     searchbutton: string;
@@ -93,13 +93,13 @@ const PropertiesLayout237: React.FC<PropertiesLayout237Props> = (props) => {
                   className="text-black-900 text-center text-xl w-full"
                   size="txtRobotoBold20"
                 >
-                  {props?.propertyheading}
+                  {props?.typeheading}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[348px] md:max-w-full text-black-900 text-center text-lg"
                   size="txtRobotoLight18"
                 >
-                  {props?.propertydescription}
+                  {props?.typedescription}
                 </Text>
               </div>
             </div>
@@ -170,8 +170,8 @@ PropertiesLayout237.defaultProps = {
   locationheading: "Location-Based Search",
   locationdescription:
     "Easily search for properties based on your desired location.",
-  propertyheading: "Property Type Filter",
-  propertydescription:
+  typeheading: "Property Type Filter",
+  typedescription:
     "Filter properties based on their type, such as commercial real estate, multi-family, or industrial sites.",
   sizeheading: "Size and Price Range Filters",
   sizedescription: (

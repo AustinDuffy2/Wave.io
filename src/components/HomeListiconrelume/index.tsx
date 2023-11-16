@@ -6,30 +6,30 @@ type HomeListiconrelumeProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "headingtext"
   | "descriptiontext"
-  | "more"
-  | "login"
+  | "morebuttontext"
+  | "loginbuttontext"
   | "headingtext1"
   | "descriptiontext1"
-  | "more1"
-  | "login1"
+  | "morebuttontext1"
+  | "loginbuttontext1"
   | "headingtext2"
   | "descriptiontext2"
-  | "more2"
-  | "login2"
+  | "morebuttontext2"
+  | "loginbuttontext2"
 > &
   Partial<{
     headingtext: string;
     descriptiontext: JSX.Element | string;
-    more: string;
-    login: string;
+    morebuttontext: string;
+    loginbuttontext: string;
     headingtext1: string;
     descriptiontext1: JSX.Element | string;
-    more1: string;
-    login1: string;
+    morebuttontext1: string;
+    loginbuttontext1: string;
     headingtext2: string;
     descriptiontext2: JSX.Element | string;
-    more2: string;
-    login2: string;
+    morebuttontext2: string;
+    loginbuttontext2: string;
   }>;
 
 const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
@@ -66,7 +66,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.more}
+              {props?.morebuttontext}
             </Button>
             <Button
               className="cursor-pointer flex items-center justify-center min-w-[98px] rounded-lg"
@@ -83,7 +83,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               variant="fill"
             >
               <div className="!text-white-A700 font-roboto text-base text-left">
-                {props?.login}
+                {props?.loginbuttontext}
               </div>
             </Button>
           </div>
@@ -118,7 +118,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.more1}
+              {props?.morebuttontext1}
             </Button>
             <Button
               className="cursor-pointer flex items-center justify-center min-w-[98px] rounded-lg"
@@ -135,7 +135,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               variant="fill"
             >
               <div className="!text-white-A700 font-roboto text-base text-left">
-                {props?.login1}
+                {props?.loginbuttontext1}
               </div>
             </Button>
           </div>
@@ -170,7 +170,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.more2}
+              {props?.morebuttontext2}
             </Button>
             <Button
               className="cursor-pointer flex items-center justify-center min-w-[98px] rounded-lg"
@@ -187,7 +187,7 @@ const HomeListiconrelume: React.FC<HomeListiconrelumeProps> = (props) => {
               variant="fill"
             >
               <div className="!text-white-A700 font-roboto text-base text-left">
-                {props?.login2}
+                {props?.loginbuttontext2}
               </div>
             </Button>
           </div>
@@ -208,8 +208,8 @@ HomeListiconrelume.defaultProps = {
       got you covered.
     </>
   ),
-  more: "More",
-  login: "Login",
+  morebuttontext: "More",
+  loginbuttontext: "Login",
   headingtext1: "Real Estate Community",
   descriptiontext1: (
     <>
@@ -220,8 +220,8 @@ HomeListiconrelume.defaultProps = {
       got you covered.
     </>
   ),
-  more1: "More",
-  login1: "Login",
+  morebuttontext1: "More",
+  loginbuttontext1: "Login",
   headingtext2: "Property Search",
   descriptiontext2: (
     <>
@@ -232,8 +232,8 @@ HomeListiconrelume.defaultProps = {
       got you covered.
     </>
   ),
-  more2: "More",
-  login2: "Login",
+  morebuttontext2: "More",
+  loginbuttontext2: "Login",
 };
 
 export default HomeListiconrelume;

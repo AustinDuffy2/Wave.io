@@ -84,11 +84,11 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
         >
           <div className="flex flex-1 flex-col gap-[30px] items-center justify-start rounded-[20px] w-full">
             <Img
-              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px] w-full"
+              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px]"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />
-            <div className="flex flex-col gap-5 h-[264px] md:h-auto items-start justify-start sm:justify-start p-6 sm:px-5 w-full">
+            <div className="flex flex-col gap-5 h-[264px] md:h-auto items-start justify-start p-6 sm:px-5 w-full">
               <div className="flex flex-col gap-2 h-[90px] md:h-auto items-start justify-start w-full">
                 <Text
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl"
@@ -145,7 +145,7 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
           </div>
           <div className="flex flex-1 flex-col gap-[30px] h-[794px] md:h-auto items-center justify-start rounded-[20px] w-full">
             <Img
-              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px] w-full"
+              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px]"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />
@@ -206,7 +206,7 @@ const PropertyDetailsPortfolio8: React.FC<PropertyDetailsPortfolio8Props> = (
           </div>
           <div className="flex flex-1 flex-col gap-[30px] items-center justify-start rounded-[20px] w-full">
             <Img
-              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px] w-full"
+              className="md:h-auto object-cover rounded-tl-[20px] rounded-tr-[20px]"
               src="images/img_heroanimation.png"
               alt="heroanimation"
             />

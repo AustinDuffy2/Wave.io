@@ -4,23 +4,23 @@ import { Button, Img, List, Text } from "components";
 
 type HomeColumnOneProps = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "price"
+  | "userprice"
   | "ownedfromproperOne"
+  | "dailycompletedtransactions"
   | "dailycompleted"
-  | "dailycompleted1"
   | "regularclients"
   | "reagularclientsOne"
-  | "price2"
+  | "userprice2"
   | "ownedfromproperone1"
 > &
   Partial<{
-    price: string;
+    userprice: string;
     ownedfromproperOne: JSX.Element | string;
-    dailycompleted: string;
-    dailycompleted1: JSX.Element | string;
+    dailycompletedtransactions: string;
+    dailycompleted: JSX.Element | string;
     regularclients: string;
     reagularclientsOne: string;
-    price2: string;
+    userprice2: string;
     ownedfromproperone1: JSX.Element | string;
   }>;
 
@@ -30,7 +30,7 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
       <div className={props.className}>
         <div className="flex flex-col gap-10 items-center justify-start w-full">
           <List
-            className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 grid-cols-3 justify-center w-full"
+            className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center w-full"
             orientation="horizontal"
           >
             <div className="flex flex-1 flex-col gap-5 items-center justify-start sm:ml-[0] rounded-[20px] w-full">
@@ -48,7 +48,7 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
                   className="text-2xl md:text-[22px] text-black-900 text-center text-shadow-ts sm:text-xl w-full"
                   size="txtRobotoBold24"
                 >
-                  {props?.price}
+                  {props?.userprice}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[364px] md:max-w-full text-base text-black-900 text-center"
@@ -77,13 +77,13 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
                   className="text-2xl md:text-[22px] text-black-900 text-center text-shadow-ts sm:text-xl w-full"
                   size="txtRobotoBold24"
                 >
-                  {props?.dailycompleted}
+                  {props?.dailycompletedtransactions}
                 </Text>
                 <Text
                   className="leading-[150.00%] max-w-[364px] md:max-w-full text-base text-black-900 text-center"
                   size="txtRobotoRegular16"
                 >
-                  {props?.dailycompleted1}
+                  {props?.dailycompleted}
                 </Text>
               </div>
             </div>
@@ -128,11 +128,11 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
                 className="text-2xl md:text-[22px] text-black-900 text-center text-shadow-ts sm:text-xl w-full"
                 size="txtRobotoBold24"
               >
-                {props?.price2}
+                {props?.userprice2}
               </Text>
               <Text
-                className="leading-[150.00%] max-w-[1140px] md:max-w-full text-base text-black-900 text-center"
-                size="txtRobotoRegular16"
+                className="leading-[150.00%] max-w-[387px] md:max-w-full text-base text-black-900 text-center"
+                size="txtRobotoLight16"
               >
                 {props?.ownedfromproperone1}
               </Text>
@@ -145,7 +145,7 @@ const HomeColumnOne: React.FC<HomeColumnOneProps> = (props) => {
 };
 
 HomeColumnOne.defaultProps = {
-  price: "$15.4M",
+  userprice: "$15.4M",
   ownedfromproperOne: (
     <>
       Owned from
@@ -153,8 +153,8 @@ HomeColumnOne.defaultProps = {
       Properties transactions
     </>
   ),
-  dailycompleted: "500",
-  dailycompleted1: (
+  dailycompletedtransactions: "500",
+  dailycompleted: (
     <>
       Daily completed <br />
       transactions
@@ -162,7 +162,7 @@ HomeColumnOne.defaultProps = {
   ),
   regularclients: "600+",
   reagularclientsOne: "Reagular Clients",
-  price2: "$15.4M",
+  userprice2: "$15.4M",
   ownedfromproperone1: (
     <>
       Owned from

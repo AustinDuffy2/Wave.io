@@ -67,7 +67,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
     <>
       <div className={props.className}>
         <div className="flex flex-col gap-5 items-start justify-start py-2.5 w-full">
-          <div className="flex flex-row gap-2.5 items-center justify-start py-2.5 w-full">
+          <div className="flex sm:flex-col flex-row gap-2.5 items-center justify-start py-2.5 w-full">
             <Text
               className="flex-1 md:text-3xl sm:text-[28px] text-[32px] text-gray-900 w-auto"
               size="txtRobotoBold32"
@@ -75,7 +75,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
               {props?.featuredpropertOne}
             </Text>
             <Button
-              className="bg-transparent cursor-pointer flex flex-1 items-center justify-center md:justify-end w-full"
+              className="bg-transparent cursor-pointer flex flex-1 items-center justify-center w-full"
               rightIcon={
                 <Img
                   className="h-6 mb-px ml-2"
@@ -85,7 +85,7 @@ const HomeLayoutcustom1: React.FC<HomeLayoutcustom1Props> = (props) => {
               }
               size="xs"
             >
-              <div className="font-roboto md:justify-end text-gray-400 text-lg text-right">
+              <div className="font-roboto text-gray-400 text-lg text-right">
                 {props?.exploreAll}
               </div>
             </Button>

@@ -4,18 +4,13 @@ import { Button, Img, Text } from "components";
 
 type PropertiesHeader26Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  | "searchtext"
-  | "descriptiontext"
-  | "searchbuttontext"
-  | "signupbuttontext"
-  | "heroimage"
+  "searchtext" | "descriptiontext" | "searchbuttontext" | "signupbuttontext"
 > &
   Partial<{
     searchtext: string;
     descriptiontext: string;
     searchbuttontext: string;
     signupbuttontext: string;
-    heroimage: string;
   }>;
 
 const PropertiesHeader26: React.FC<PropertiesHeader26Props> = (props) => {
@@ -40,16 +35,16 @@ const PropertiesHeader26: React.FC<PropertiesHeader26Props> = (props) => {
             </div>
             <div className="flex flex-row gap-[14.76px] items-center justify-center p-[2.88px] w-full">
               <Button
-                className="cursor-pointer font-roboto min-w-[90px] rounded-[9px] text-base text-center"
+                className="cursor-pointer font-roboto min-w-[92px] rounded-[9px] text-base text-center"
                 shape="round"
                 color="light_blue_500"
-                size="md"
+                size="lg"
                 variant="fill"
               >
                 {props?.searchbuttontext}
               </Button>
               <Button
-                className="!text-white-A700 cursor-pointer font-roboto min-w-[91px] text-base text-center"
+                className="!text-white-A700 cursor-pointer font-roboto min-w-[87px] rounded-[9px] text-base text-center"
                 shape="round"
                 color="light_blue_500_72"
                 size="md"
@@ -62,8 +57,8 @@ const PropertiesHeader26: React.FC<PropertiesHeader26Props> = (props) => {
         </div>
         <Img
           className="flex-1 h-[480px] md:h-auto md:min-w-0 object-cover md:w-[] w-full"
+          src="images/img_heroanimation_480x672.png"
           alt="heroanimation"
-          src={props?.heroimage}
         />
       </div>
     </>
@@ -76,7 +71,6 @@ PropertiesHeader26.defaultProps = {
     "Discover a wide range of commercial real estate, multi-family, industrial sites, and rental properties around the world with our AI-powered platform.",
   searchbuttontext: "Search",
   signupbuttontext: "Sign Up",
-  heroimage: "images/img_heroanimation_480x672.png",
 };
 
 export default PropertiesHeader26;

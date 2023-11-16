@@ -12,10 +12,10 @@ const Header11: React.FC<Header11Props> = (props) => {
   return (
     <>
       <header className={props.className}>
-        <div className="bg-white-A700 border-b border-black-900 border-solid flex flex-col h-[72px] md:h-auto items-center justify-center px-4 py-5 w-full">
+        <div className="bg-white-A700 border border-solid border-white-A700 flex flex-col items-center justify-center px-4 py-5 w-full">
           <div className="flex flex-row gap-8 items-center justify-center w-full">
             <Img
-              className="flex-1 h-[25px] sm:h-[] md:h-[] max-h-[25px] sm:max-h-[] md:min-w-0"
+              className="flex-1 h-[25px] max-h-[25px] md:min-w-0"
               src="images/img_column.svg"
               alt="column"
             />

@@ -25,12 +25,9 @@ const AIPlatformPage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-[120px] items-center justify-start mx-auto md:px-10 sm:px-5 px-[150px] py-10 w-auto sm:w-full md:w-full">
+      <div className="bg-white-A700 flex flex-col font-roboto sm:gap-10 md:gap-10 gap-28 items-center justify-start mx-auto md:px-10 sm:px-5 px-[150px] py-10 w-auto sm:w-full md:w-full">
         <Header11 className="flex flex-col gap-[30px] items-center justify-center w-full" />
-        <PropertiesHeader26
-          className="flex md:flex-col flex-row gap-[30px] items-center justify-start max-w-[1140px] mx-auto w-full"
-          heroimage="images/img_images.png"
-        />
+        <PropertiesHeader26 className="flex md:flex-col flex-row gap-[30px] items-center justify-start max-w-[1140px] mx-auto w-full" />
         <Img
           className="h-14 max-w-[1140px] mx-auto w-full"
           src="images/img_logo3.svg"

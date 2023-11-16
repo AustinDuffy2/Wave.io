@@ -38,7 +38,7 @@ const PropertyDetailsLayout22: React.FC<PropertyDetailsLayout22Props> = (
                   </Text>
                 </div>
               </div>
-              <div className="flex flex-row gap-6 items-center justify-start md:justify-start pt-4 w-full">
+              <div className="flex flex-row gap-6 items-center justify-start pt-4 w-full">
                 <Button
                   className="cursor-pointer font-roboto min-w-[129px] text-base text-center"
                   shape="round"
@@ -70,7 +70,7 @@ const PropertyDetailsLayout22: React.FC<PropertyDetailsLayout22Props> = (
             </div>
           </div>
           <Img
-            className="flex-1 h-[500px] md:h-auto max-h-[500px] sm:max-h-[] sm:min-w-full object-cover sm:w-[] md:w-[]"
+            className="flex-1 h-[500px] md:h-auto max-h-[500px] object-cover sm:w-[] md:w-[]"
             src="images/img_images.png"
             alt="heroanimation"
           />

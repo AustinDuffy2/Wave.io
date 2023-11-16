@@ -4,13 +4,13 @@ import { Button, Text } from "components";
 
 type PropertyDetailsCta7Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "headingThree" | "textTwo" | "signuplabel" | "signupbuttontext"
+  "headingThree" | "textTwo" | "signuptext" | "logintext"
 > &
   Partial<{
     headingThree: string;
     textTwo: string;
-    signuplabel: string;
-    signupbuttontext: string;
+    signuptext: string;
+    logintext: string;
   }>;
 
 const PropertyDetailsCta7: React.FC<PropertyDetailsCta7Props> = (props) => {
@@ -31,7 +31,7 @@ const PropertyDetailsCta7: React.FC<PropertyDetailsCta7Props> = (props) => {
             {props?.textTwo}
           </Text>
         </div>
-        <div className="flex flex-1 flex-row gap-4 items-start sm:justify-center justify-end w-full">
+        <div className="flex flex-1 flex-row gap-4 items-start justify-end w-full">
           <Button
             className="cursor-pointer font-roboto min-w-[103px] text-base text-center"
             shape="round"
@@ -39,16 +39,16 @@ const PropertyDetailsCta7: React.FC<PropertyDetailsCta7Props> = (props) => {
             size="md"
             variant="fill"
           >
-            {props?.signuplabel}
+            {props?.signuptext}
           </Button>
           <Button
-            className="!text-white-A700 cursor-pointer font-roboto min-w-[95px] text-base text-center"
+            className="!text-white-A700 cursor-pointer font-roboto min-w-[80px] text-base text-center"
             shape="round"
             color="light_blue_500_72"
             size="md"
             variant="fill"
           >
-            {props?.signupbuttontext}
+            {props?.logintext}
           </Button>
         </div>
       </div>
@@ -59,8 +59,8 @@ const PropertyDetailsCta7: React.FC<PropertyDetailsCta7Props> = (props) => {
 PropertyDetailsCta7.defaultProps = {
   headingThree: "Unlock the Power of AI",
   textTwo: "Discover the Future of Real Estate with Our AI Platform",
-  signuplabel: "Sign Up",
-  signupbuttontext: "Sign Up",
+  signuptext: "Sign Up",
+  logintext: "Login",
 };
 
 export default PropertyDetailsCta7;

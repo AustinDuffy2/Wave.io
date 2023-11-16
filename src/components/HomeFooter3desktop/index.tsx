@@ -128,8 +128,9 @@ const HomeFooter3desktop: React.FC<HomeFooter3desktopProps> = (props) => {
           <div className="flex flex-1 sm:flex-col flex-row gap-[23.05px] items-start justify-start w-full">
             <div className="flex flex-1 flex-col gap-[11.52px] items-start justify-start w-full">
               <Text
-                className="text-base text-black-900 w-full"
+                className="common-pointer text-base text-black-900 w-full"
                 size="txtRobotoSemiBold16"
+                onClick={() => navigate("/")}
               >
                 {props?.userhomelink}
               </Text>
@@ -148,8 +149,9 @@ const HomeFooter3desktop: React.FC<HomeFooter3desktopProps> = (props) => {
                 {props?.userpropertysearchlink}
               </Text>
               <Text
-                className="text-base text-black-900 w-full"
+                className="common-pointer text-base text-black-900 w-full"
                 size="txtRobotoSemiBold16"
+                onClick={() => navigate("/propertydetails")}
               >
                 {props?.userpropertydetaillink}
               </Text>

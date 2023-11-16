@@ -4,9 +4,9 @@ import { Button, Img, PagerIndicator, Slider, Text } from "components";
 
 type AIPlatformTestimonial7Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  "quote" | "username" | "userposition"
+  "userquote" | "username" | "userposition"
 > &
-  Partial<{ quote: string; username: string; userposition: string }>;
+  Partial<{ userquote: string; username: string; userposition: string }>;
 
 const AIPlatformTestimonial7: React.FC<AIPlatformTestimonial7Props> = (
   props,
@@ -59,7 +59,7 @@ const AIPlatformTestimonial7: React.FC<AIPlatformTestimonial7Props> = (
                         className="leading-[140.00%] max-w-[1044px] md:max-w-full text-2xl md:text-[22px] text-black-900 text-center sm:text-xl"
                         size="txtRobotoBold24"
                       >
-                        {props?.quote}
+                        {props?.userquote}
                       </Text>
                       <div className="flex flex-col gap-4 items-center justify-start w-[300px]">
                         <Img
@@ -132,7 +132,7 @@ const AIPlatformTestimonial7: React.FC<AIPlatformTestimonial7Props> = (
 };
 
 AIPlatformTestimonial7.defaultProps = {
-  quote:
+  userquote:
     "Our AI platform has revolutionized the way we search for properties. It has made the process faster, more efficient, and highly accurate.",
   username: "John Doe",
   userposition: "CEO, ABC Company",

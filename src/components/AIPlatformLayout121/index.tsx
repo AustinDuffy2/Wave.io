@@ -6,30 +6,30 @@ type AIPlatformLayout121Props = Omit<
   React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
   | "subheadingtext"
   | "headingtext"
-  | "searchbuttontext"
-  | "signupbuttontext"
-  | "inputcriteriaheadingtext"
+  | "searchtext"
+  | "logintext"
   | "inputcriteriatext"
-  | "receivesuggestionsheadingtext"
   | "receivesuggestionstext"
-  | "exploreoptionsheadingtext"
   | "exploreoptionstext"
-  | "makeinformeddecisionsheadingtext"
   | "makeinformeddecisionstext"
+  | "heading"
+  | "text"
+  | "heading1"
+  | "text1"
 > &
   Partial<{
     subheadingtext: string;
     headingtext: string;
-    searchbuttontext: string;
-    signupbuttontext: string;
-    inputcriteriaheadingtext: string;
-    inputcriteriatext: JSX.Element | string;
-    receivesuggestionsheadingtext: string;
-    receivesuggestionstext: string;
-    exploreoptionsheadingtext: string;
+    searchtext: string;
+    logintext: string;
+    inputcriteriatext: string;
+    receivesuggestionstext: JSX.Element | string;
     exploreoptionstext: string;
-    makeinformeddecisionsheadingtext: string;
     makeinformeddecisionstext: string;
+    heading: string;
+    text: string;
+    heading1: string;
+    text1: string;
   }>;
 
 const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
@@ -59,10 +59,10 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
               size="md"
               variant="fill"
             >
-              {props?.searchbuttontext}
+              {props?.searchtext}
             </Button>
             <Button
-              className="cursor-pointer flex items-center justify-center min-w-[131px]"
+              className="cursor-pointer flex items-center justify-center min-w-[116px]"
               rightIcon={
                 <Img className="h-6 ml-3" src="images/img_map.svg" alt="map" />
               }
@@ -72,7 +72,7 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
               variant="fill"
             >
               <div className="!text-white-A700 font-roboto text-base text-left">
-                {props?.signupbuttontext}
+                {props?.logintext}
               </div>
             </Button>
           </div>
@@ -96,31 +96,7 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl w-full"
                   size="txtRobotoBold24"
                 >
-                  {props?.inputcriteriaheadingtext}
-                </Text>
-                <Text
-                  className="text-black-900 text-lg w-full"
-                  size="txtRobotoLight18"
-                >
                   {props?.inputcriteriatext}
-                </Text>
-              </div>
-            </div>
-            <div className="flex flex-1 md:flex-col flex-row gap-10 items-start justify-start w-full">
-              <div className="flex flex-col gap-4 items-center justify-start w-auto">
-                <Img
-                  className="h-12 w-12"
-                  src="images/img_iconrelume.svg"
-                  alt="iconrelume"
-                />
-                <Line className="bg-black-900 h-[100px] w-0.5" />
-              </div>
-              <div className="flex flex-1 flex-col gap-4 items-start justify-start w-full">
-                <Text
-                  className="text-2xl md:text-[22px] text-black-900 sm:text-xl w-full"
-                  size="txtRobotoBold24"
-                >
-                  {props?.receivesuggestionsheadingtext}
                 </Text>
                 <Text
                   className="text-black-900 text-lg w-full"
@@ -144,13 +120,37 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl w-full"
                   size="txtRobotoBold24"
                 >
-                  {props?.exploreoptionsheadingtext}
+                  {props?.exploreoptionstext}
                 </Text>
                 <Text
                   className="text-black-900 text-lg w-full"
                   size="txtRobotoLight18"
                 >
-                  {props?.exploreoptionstext}
+                  {props?.makeinformeddecisionstext}
+                </Text>
+              </div>
+            </div>
+            <div className="flex flex-1 md:flex-col flex-row gap-10 items-start justify-start w-full">
+              <div className="flex flex-col gap-4 items-center justify-start w-auto">
+                <Img
+                  className="h-12 w-12"
+                  src="images/img_iconrelume.svg"
+                  alt="iconrelume"
+                />
+                <Line className="bg-black-900 h-[100px] w-0.5" />
+              </div>
+              <div className="flex flex-1 flex-col gap-4 items-start justify-start w-full">
+                <Text
+                  className="text-2xl md:text-[22px] text-black-900 sm:text-xl w-full"
+                  size="txtRobotoBold24"
+                >
+                  {props?.heading}
+                </Text>
+                <Text
+                  className="text-black-900 text-lg w-full"
+                  size="txtRobotoLight18"
+                >
+                  {props?.text}
                 </Text>
               </div>
             </div>
@@ -167,13 +167,13 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
                   className="text-2xl md:text-[22px] text-black-900 sm:text-xl w-full"
                   size="txtRobotoBold24"
                 >
-                  {props?.makeinformeddecisionsheadingtext}
+                  {props?.heading1}
                 </Text>
                 <Text
                   className="text-black-900 text-lg w-full"
                   size="txtRobotoLight18"
                 >
-                  {props?.makeinformeddecisionstext}
+                  {props?.text1}
                 </Text>
               </div>
             </div>
@@ -187,22 +187,21 @@ const AIPlatformLayout121: React.FC<AIPlatformLayout121Props> = (props) => {
 AIPlatformLayout121.defaultProps = {
   subheadingtext: "Revolutionize",
   headingtext: "Streamline Your Property Search with AI",
-  searchbuttontext: "Search",
-  signupbuttontext: "Sign Up",
-  inputcriteriaheadingtext: "Input Criteria",
-  inputcriteriatext: (
+  searchtext: "Search",
+  logintext: "Login",
+  inputcriteriatext: "Input Criteria",
+  receivesuggestionstext: (
     <>
       Tell us what you&#39;re looking for and let our AI platform do the rest.
     </>
   ),
-  receivesuggestionsheadingtext: "Receive Suggestions",
-  receivesuggestionstext:
-    "Get personalized property suggestions based on your criteria and preferences.",
-  exploreoptionsheadingtext: "Explore Options",
-  exploreoptionstext:
-    "Browse through a wide range of properties that match your requirements.",
-  makeinformeddecisionsheadingtext: "Make Informed Decisions",
+  exploreoptionstext: "Receive Suggestions",
   makeinformeddecisionstext:
+    "Get personalized property suggestions based on your criteria and preferences.",
+  heading: "Explore Options",
+  text: "Browse through a wide range of properties that match your requirements.",
+  heading1: "Make Informed Decisions",
+  text1:
     "Access detailed property information and make confident choices for your next investment.",
 };
 

@@ -12,7 +12,7 @@ type AIPlatformLayout25Props = Omit<
   | "numberOne"
   | "textOne"
   | "moreOne"
-  | "signUpThree"
+  | "signUpTwo"
 > &
   Partial<{
     subheadingTwo: string;
@@ -23,7 +23,7 @@ type AIPlatformLayout25Props = Omit<
     numberOne: string;
     textOne: string;
     moreOne: string;
-    signUpThree: string;
+    signUpTwo: string;
   }>;
 
 const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
@@ -106,7 +106,7 @@ const AIPlatformLayout25: React.FC<AIPlatformLayout25Props> = (props) => {
               variant="fill"
             >
               <div className="!text-white-A700 font-roboto text-base text-left">
-                {props?.signUpThree}
+                {props?.signUpTwo}
               </div>
             </Button>
           </div>
@@ -131,7 +131,7 @@ AIPlatformLayout25.defaultProps = {
   numberOne: "50%",
   textOne: "Efficiently search and compare properties worldwide.",
   moreOne: " More",
-  signUpThree: "Sign Up",
+  signUpTwo: "Sign Up",
 };
 
 export default AIPlatformLayout25;

@@ -8,22 +8,22 @@ type AboutUsContact15Props = Omit<
   | "contactus"
   | "contacttext"
   | "emailheading"
-  | "email"
+  | "emailtext"
   | "phoneheading"
-  | "phonenumber"
+  | "phonetext"
   | "officeheading"
-  | "officeaddress"
+  | "officetext"
 > &
   Partial<{
     tagline: string;
     contactus: string;
     contacttext: string;
     emailheading: string;
-    email: string;
+    emailtext: string;
     phoneheading: string;
-    phonenumber: string;
+    phonetext: string;
     officeheading: string;
-    officeaddress: string;
+    officetext: string;
   }>;
 
 const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
@@ -73,7 +73,7 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                     className="text-base text-black-900 underline w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.email}
+                    {props?.emailtext}
                   </Text>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                     className="text-base text-black-900 underline w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.phonenumber}
+                    {props?.phonetext}
                   </Text>
                 </div>
               </div>
@@ -115,14 +115,14 @@ const AboutUsContact15: React.FC<AboutUsContact15Props> = (props) => {
                     className="text-base text-black-900 w-full"
                     size="txtRobotoRegular16"
                   >
-                    {props?.officeaddress}
+                    {props?.officetext}
                   </Text>
                 </div>
               </div>
             </List>
           </div>
           <Img
-            className="flex-1 h-[500px] md:h-auto max-h-[500px] sm:max-h-[] sm:min-w-full object-cover rounded-[20px] sm:w-[] md:w-[]"
+            className="flex-1 h-[500px] md:h-auto max-h-[500px] object-cover rounded-[20px] sm:w-[] md:w-[]"
             src="images/img_heroanimation_500x688.png"
             alt="heroanimation_One"
           />
@@ -138,11 +138,11 @@ AboutUsContact15.defaultProps = {
   contacttext:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   emailheading: "Email",
-  email: "hello@relume.io",
+  emailtext: "hello@relume.io",
   phoneheading: "Phone",
-  phonenumber: "+1 (555) 000-0000",
+  phonetext: "+1 (555) 000-0000",
   officeheading: "Office",
-  officeaddress: "123 Sample St, Sydney NSW 2000 AU",
+  officetext: "123 Sample St, Sydney NSW 2000 AU",
 };
 
 export default AboutUsContact15;
